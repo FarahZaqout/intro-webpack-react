@@ -30,7 +30,7 @@ inside `index.html` add the following:
         <title>Document</title>
     </head>
     <body>
-        <script src="./bundle.js"></script>
+        <script src="./index.js"></script>
     </body>
 </html>
 ```
@@ -44,7 +44,7 @@ try opening the html file in the browser and look at the console output.
 
 So far everything should be working as expected.
 
-Now add the following to your `bundle.js`.
+Now add the following to your `index.js`.
 
 ```javascript
 import path from 'path'
