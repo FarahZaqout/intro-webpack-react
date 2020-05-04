@@ -18,7 +18,7 @@ We're going to create a directory and add webpack to it.
 * `cd webpack-react`
 * `npm init -y`
 
-for now, let's create a simple public folder and add an `index.html` and an `index.js` in it.
+for now, let's create a simple public folder and add an `index.html` and an `bundle.js` in it.
 
 inside `index.html` add the following:
 ```html
@@ -30,7 +30,7 @@ inside `index.html` add the following:
         <title>Document</title>
     </head>
     <body>
-        <script src="./index.js"></script>
+        <script src="./bundle.js"></script>
     </body>
 </html>
 ```
@@ -44,7 +44,7 @@ try opening the html file in the browser and look at the console output.
 
 So far everything should be working as expected.
 
-Now add the following to your `index.js`.
+Now add the following to your `bundle.js`.
 
 ```javascript
 import path from 'path'
@@ -58,7 +58,7 @@ This is because browsers do not support `import` yet.
 ### Installing webpack:
 in order to use webpack properly, we need to separate our `public` directory from our `src`.
 
-* delete your index.js
+* delete your bundle.js
 * create a `src` folder and add `index.js` to it, with the same console.log and import statement from before.
 * install webpack `npm i -D webpack webpack-cli`
 
